@@ -1,14 +1,14 @@
-import { faTabletScreenButton } from '@fortawesome/free-solid-svg-icons';
+// import { faTabletScreenButton } from '@fortawesome/free-solid-svg-icons';
 import DatePicker from 'react-date-picker'
-import React,{ useCallback, useEffect, useState } from 'react';
-import dish1 from './../../src/components/image/dish1.jpeg';
-import reportWebVitals from "./../reportWebVitals";
+import React,{useState } from 'react';
+// import dish1 from './../../src/components/image/dish1.jpeg';
+// import reportWebVitals from "./../reportWebVitals";
 import Holidays from 'date-holidays';
 
 function Reserve2() {
 
     const hd = new Holidays('US');
-    const holiday = hd.getHolidays();
+    // const holiday = hd.getHolidays();
     //console.log(holiday)
 
     const [guestnum, setGuestNum] = useState(1);
