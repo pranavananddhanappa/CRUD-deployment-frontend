@@ -12,9 +12,9 @@ function Fee() {
     const [expiry, setExpiry] = useState('')
     const [cvv, setCvv] = useState('')
     const [zip, setZip] = useState('')
-    const [ranNum, setRandNum] = useState(Math.floor(Math.random() * (16 - 1 + 1)) + 1);
-    const [ranPoints, setPoints] = useState(Math.floor(Math.random() * (1500 - 1 + 1)) + 1);
-    const [isChecked, setChecked] = useState(false);
+    const [ranNum] = useState(Math.floor(Math.random() * (16 - 1 + 1)) + 1);
+    const [ranPoints] = useState(Math.floor(Math.random() * (1500 - 1 + 1)) + 1);
+    const [setChecked] = useState(false);
     const [sameAdd, setAddress] = useState('');
 
     // var dinerNumTemp;
@@ -77,17 +77,17 @@ function Fee() {
         setZip(value);
     };
 
-    const handlePoints = (e) => {
-        // const value = (Math.floor(Math.random() * (1500 - 1 + 1)) + 1);
-        // console.log(value);
-        setPoints(Math.floor(Math.random() * (1500 - 1 + 1)) + 1);
-    }
+    // const handlePoints = (e) => {
+    //     // const value = (Math.floor(Math.random() * (1500 - 1 + 1)) + 1);
+    //     // console.log(value);
+    //     setPoints(Math.floor(Math.random() * (1500 - 1 + 1)) + 1);
+    // }
 
-    const handleDinerNum = (e) => {
-        //const value = (Math.floor(Math.random() * (16 - 1 + 1)) + 1);
-        //console.log(value);
-        setRandNum(Math.floor(Math.random() * (16 - 1 + 1)) + 1);
-    }
+    // const handleDinerNum = (e) => {
+    //     //const value = (Math.floor(Math.random() * (16 - 1 + 1)) + 1);
+    //     //console.log(value);
+    //     setRandNum(Math.floor(Math.random() * (16 - 1 + 1)) + 1);
+    // }
 
     // function loadNumber(){
     //     dinerNumTemp = (Math.floor(Math.random() * (16 - 1 + 1)) + 1);
